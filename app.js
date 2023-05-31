@@ -1,1 +1,1 @@
-console.dir(document)
+document.body.childNodes[5].href ="http://google.com"
