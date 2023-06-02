@@ -48,4 +48,8 @@ firstH1Element.remove()
 firstParagraph.parentElement.append(firstParagraph)
 
 
+/* innerHTML */
+
+firstParagraph.innerHTML= 'HI ! This is <strong>important</strong>'
+
      
