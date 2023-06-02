@@ -41,4 +41,11 @@ firstParagraph.append(newAnchorElement);
 
 let firstH1Element = document.querySelector('h1');
 firstH1Element.remove()
+
+
+/* moving the elemnt*/
+
+firstParagraph.parentElement.append(firstParagraph)
+
+
      
