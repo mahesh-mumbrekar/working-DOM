@@ -15,3 +15,20 @@ function updateRemainingElement(event) {
 
 yourNameInputElement.addEventListener('input', updateRemainingElement);
 remainingCharElement.addEventListener('input', updateRemainingElement);
+
+
+/* to change color */
+
+remainingCharElement.style.color = "red"
+
+
+/* to change class name of some element or add class name */
+/* 1) add class name */
+
+let buttonElement = document.querySelector('button')
+buttonElement.className = 'push'
+
+
+
+
+
