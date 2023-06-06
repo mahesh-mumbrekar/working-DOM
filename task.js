@@ -10,6 +10,18 @@ function updateRemainingElement(event) {
     let enteredTextLength = enteredText.length;
     let remainingCharacters = maxallowedChars - enteredTextLength;
     remainingCharElement.textContent = remainingCharacters;
+    if (remainingCharacters === 0) {
+        yourNameInputElement.classList.add('error');
+        remainingCharElement.classList.add('error');
+    } else if (remainingCharacters <= 10) {
+        yourNameInputElement.classList.add('warning');
+        remainingCharElement.classList.add('warning');
+        yourNameInputElement.classList.remove('error');
+        remainingCharElement.classList.remove('error');
+    } else {
+        yourNameInputElement.classList.remove('warning');
+        remainingCharElement.classList.remove('warning');
+    }
 }
 
 
@@ -19,7 +31,7 @@ remainingCharElement.addEventListener('input', updateRemainingElement);
 
 /* to change color */
 
-remainingCharElement.style.color = "red"
+/*remainingCharElement.style.color = "red"*/
 
 
 /* to change class name of some element or add class name */
@@ -35,6 +47,8 @@ buttonElement.className = 'push'
 
 buttonElement.classList.add('pull')
 buttonElement.classList.remove('push')
+
+
 
 
 
