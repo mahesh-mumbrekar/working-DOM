@@ -13,4 +13,16 @@ for (let Activities of commonActivities) {
 }
 
 
+/* for....in used in object */
+
+let userDetails = {
+    name: 'carl',
+    age: 32,
+    job:'software enginner'
+}
+
+for (let key in userDetails) {
+    let output = key + ':' + userDetails[key]
+    console.log(output)
+}
 
